@@ -1,0 +1,238 @@
+body{
+  background-color: #ffff;
+
+}
+
+.intro{
+  display:flex;
+  height: 100vh;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+}
+
+.intro-left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-right{
+  flex: 1;
+  position: relative;
+}
+
+.intro-left-wrapper{
+  padding: 10px;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.img{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  transform: rotate(20deg);
+  filter: drop-shadow(30px 10px 15px black)
+}
+
+.intro-i{
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: -5%;
+  height: 50px;
+  overflow: hidden;
+}
+.intro-r-i{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.intro-name{
+  font-size: 60px;
+
+}
+
+.intro-title{
+  height: 50px;
+  overflow: hidden;
+
+}
+
+.intro-title-wrapper{
+  height: 100%;
+  animation: move 4s ease-in-out infinite alternate;
+
+}
+
+@keyframes move {
+  12.5%{
+    transform: translateY(-50px)
+  }
+  25%{
+    transform: translateY(-100px)
+  }
+  37.5%{
+    transform: translateY(-150px)
+  }
+  50%{
+    transform: translateY(-200px)
+  }
+  62.5%{
+    transform: translateY(-250px)
+  }
+  75%{
+    transform: translateY(-300px)
+  }
+  87.5%{
+    transform: translateY(-350px)
+  }
+  100%{
+    transform: translateY(-400px)
+  }
+}
+
+.intro-title-item{
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #59b256;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.intro-img{
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+
+.intro-top{
+  clip-path: polygon(100% 0, 100% 55%, 100% 100%, 145% 100%, .2% 50%, 145% 0%);
+  background-color: #395741;
+  width: 100%;
+  height: 100%;
+  position:relative;
+  top: 0;
+  right: 0;
+}
+.intro-top-shadow{
+  clip-path: polygon(100% 0, 100% 55%, 100% 100%, 120% 100%, 0% 50%, 120% 0%);
+  background-color: #496e4c;
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.intro-middle{
+  clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 95% 100%, 0% 50%, 95% 0%);
+  background-color: #588157;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+.intro-middle-shadow{
+  clip-path: polygon(100% 0, 100% 55%, 100% 100%, 70% 100%, 0% 50%, 70% 0%);
+  background-color: #7e9971;
+  filter: blur(5px);
+
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+.intro-bottom{
+  clip-path: polygon(100% 0%, 100% 54%, 100% 100%, 45% 100%, 0% 50%, 45% 0%);
+  background-color: #a3b18a;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+.intro-bottom-shadow{
+  clip-path: polygon(100% 0, 100% 55%, 100% 100%, 20% 100%, 0% 50%, 20% 0%);
+  background-color: #d1d5c3;
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  right: 0;
+}
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.intro-desc{
+  font-size: 20px;
+}
+.btn{
+  width: 20%;
+  height: 20%
+}
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #395741;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #395741;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #b69121;
+  background-color: #395741;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
